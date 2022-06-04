@@ -139,7 +139,16 @@ body {
 /* ------------- */
 /* Media Queries */
 /* ------------- */
-@media (min-width: 50em) {
+@media (min-width: 700px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .rowSpan-2 {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 920px) {
   .testimonial-grid {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -154,4 +163,5 @@ body {
     grid-column-start: 4;
   }
 }
+
 
