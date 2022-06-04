@@ -19,3 +19,51 @@ body {
   background: var(--lightGray);
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
+
+.testimonial-grid {
+  display: grid;
+  gap: 24px;
+  padding: 10%;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 1px solid black;
+  -webkit-border-radius: 8px;
+  background: var(--white);
+  padding: 32px;
+}
+
+.testimonial__statement p{
+  margin-top: 24px;
+}
+
+.testimonial__profInfo {
+  display: flex;
+  justify-content: start;
+  gap: 24px;
+}
+
+.testimonial__profInfo--pic img {
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border: 4px solid var(--lgBlue);
+}
+
+@media (min-width: 50em) {
+  .testimonial-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .colSpan-2 {
+    grid-column: span 2;
+  }  
+
+  .rowSpan-2 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+  }
+}
