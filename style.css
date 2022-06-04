@@ -1,0 +1,21 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --modViolet: hsl(263, 55%, 52%);
+  --vdgBlue: hsl(217, 19%, 35%);
+  --vdbBlue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --lightGray: hsl(0, 0%, 81%);
+  --lgBlue: hsl(210, 46%, 95%);
+}
+
+body {
+  background: var(--lightGray);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
